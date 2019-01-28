@@ -5,7 +5,7 @@
 // If input is divisible by 5 > Buzz
 // If not divisible > return the input
 
-console.log(fizzBuzz("7"));
+console.log(fizzBuzz(15));
 
 function fizzBuzz(input) {
   if (typeof input !== "number") return NaN;
