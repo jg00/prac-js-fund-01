@@ -4,13 +4,13 @@
 // Version 1
 // One way by checking to see if a number has more than two factors
 
-showPrimes(20);
+showPrimes(100);
 
 function showPrimes(limit) {
-  for (let number = 2; number <= 20; number++) {
+  for (let number = 2; number <= limit; number++) {
     // Count factors of a number
     let count = 0;
-    for (let factor = 1; factor <= 20; factor++) {
+    for (let factor = 1; factor <= limit; factor++) {
       if (number % factor === 0) count++;
     }
 
