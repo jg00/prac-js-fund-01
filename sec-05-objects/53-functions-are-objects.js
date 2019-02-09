@@ -40,3 +40,19 @@ Circle.call({}, 2);
 
 // 4b Other methods available in our functions - .apply({}, [array of args])
 Circle.apply({}, [2, 3, 4]);
+
+// 5 Example .call()
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+function printFullName() {
+  return this.lastName + " " + this.firstName;
+}
+
+let alex = new Person("Alex", "Boone");
+let sam = new Person("Sam", "Wells");
+
+console.log(printFullName.call(sam));
+console.log(printFullName.call(alex));
