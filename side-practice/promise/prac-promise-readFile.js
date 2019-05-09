@@ -1,5 +1,6 @@
+const path = require("path");
 const fs = require("fs");
-const files = ["./files/demofile.txt", "./files/demofile.other.txt"];
+const files = path.join(__dirname, "../files/demofile.txt");
 
 function readFile(path, encoding) {
   return new Promise((response, reject) => {
@@ -10,18 +11,9 @@ function readFile(path, encoding) {
   });
 }
 
-// collect promises
-let promises = files.map(path => readFile(path, "utf8"));
-
-Promise.all(promises)
-  .then(data => console.log(data))
-  .catch(err => console.log(err));
-
-/*
 // Read one file
-readFile("./files/demofile.txt", "utf8")
+readFile(files, "utf8")
   .then(data => {
     console.log(data);
   })
   .catch(err => console.log(err));
-*/
