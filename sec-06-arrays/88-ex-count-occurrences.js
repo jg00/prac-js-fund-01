@@ -1,16 +1,12 @@
-const numbers = [1, 2, 3, 4, 1, 1];
-
-const count = countOccurrences(numbers, 5);
+const numbers = [1, 2, 3, 4, 1];
+const count = countOccurrences(numbers, 1);
 
 console.log(count);
 
 function countOccurrences(array, searchElement) {
-  const result = array.reduce((accumulator, currentValue) => {
-    if (currentValue === searchElement) {
-      accumulator++;
-    }
-    return accumulator;
+  return array.reduce((accumulator, current) => {
+    console.log(accumulator, current, searchElement);
+    const occurrence = current === searchElement ? 1 : 0;
+    return accumulator + occurrence;
   }, 0);
-
-  return result;
 }
