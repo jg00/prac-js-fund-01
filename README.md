@@ -2,8 +2,14 @@
 
 Practice Javascript fundamentals.
 
-## Technologies
+## Main Items
 
-###### Frontend
+- Operators
+- Control Flow
+- Objects
+- Arrays
+- Functions
+
+## Technologies
 
 :coffee: **_Javascript_**
