@@ -1,6 +1,6 @@
-## Practice Javascript fundamentals
+## Practice/Review Javascript fundamentals
 
-Practice Javascript fundamentals - Objects, Arrays, Functions, etc.
+Practice/Review Javascript fundamentals - Objects, Arrays, Functions, etc.
 
 ## Main Items
 
